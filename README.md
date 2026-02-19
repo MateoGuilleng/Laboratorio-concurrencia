@@ -167,29 +167,5 @@ Este laboratorio implementa 10 ejercicios que cubren los conceptos fundamentales
 
 8. **Estructuras thread-safe**: Se utilizan colas concurrentes para comunicación segura entre hilos.
 
-Todos los ejercicios incluyen:
-- Código comentado y explicativo
-- Salida detallada que muestra el comportamiento concurrente
-- Explicaciones de los conceptos implementados
-- Manejo correcto de recursos (locks siempre se liberan)
 
-## Dificultades Encontradas
-
-1. **Deadlock en Filósofos Comensales**: La solución original del problema puede causar deadlock. Se resolvió usando un semáforo adicional que limita el número de filósofos que pueden intentar comer simultáneamente, y orden consistente en la adquisición de tenedores.
-
-2. **Sincronización de finalización en Productor-Consumidor**: Asegurar que todos los consumidores terminen correctamente cuando no hay más tareas requiere el uso de eventos y timeouts en las operaciones de la cola.
-
-3. **Análisis de inanición**: En el ejercicio de filósofos, se implementó un sistema de estadísticas para detectar posibles casos de inanición comparando tiempos de espera entre filósofos.
-
-4. **Orden de adquisición de recursos**: En el ejercicio de deadlock, fue importante demostrar tanto el problema como la solución, mostrando claramente cómo el orden inconsistente causa deadlock y cómo el orden consistente lo previene.
-
-5. **Visualización del comportamiento concurrente**: Se agregaron prints detallados en cada ejercicio para que sea fácil observar el comportamiento concurrente y verificar que la sincronización funciona correctamente.
-
-## Notas Adicionales
-
-- Todos los ejercicios son ejecutables y funcionales
-- El código está comentado para facilitar la comprensión
-- Se incluyen explicaciones al final de cada ejercicio
-- Los ejercicios demuestran tanto problemas como soluciones
-- Se utilizan las mejores prácticas de Python para manejo de concurrencia
 

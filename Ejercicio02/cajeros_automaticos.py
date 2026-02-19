@@ -79,3 +79,4 @@ def ejecutar_con_sincronizacion():
 if __name__ == "__main__":
     ejecutar_sin_sincronizacion()
     ejecutar_con_sincronizacion()
+
